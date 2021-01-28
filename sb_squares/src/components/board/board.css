@@ -1,0 +1,73 @@
+.MainPage {
+  text-align: center;
+  background-color: grey;
+  color: black;
+  display: flex;
+  flex-direction: column;
+
+}
+.MainBoardHolder {
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+.MainBoard {
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.MainRow {
+ display: flex;
+ flex-direction: row;
+}
+
+.mainTitle {
+  font-size:xx-large;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.teamATop {
+  font-size: x-large;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: black;
+}
+.teamA {
+    font-size: x-large;
+    color: red;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+}
+
+.teamBLeft{
+  display: flex;
+  font-size: x-large;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: black;
+  flex-direction: column;
+  justify-content: center;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+}
+.teamB {
+  display: flex;
+  font-size: x-large;
+  color: red;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: black;
+  flex-direction: column;
+  justify-content: center;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+}
+
