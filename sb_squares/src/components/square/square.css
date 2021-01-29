@@ -1,43 +1,86 @@
-.mainSquare {
-  display: flex;
-  text-align: left;
-  font-size:small;
-  flex-direction: column;
-  justify-content: center;
-  background-color:white;
-  color: black;
-  border: black 1px solid;
-  
-
-}
 .nameHolder {
   display: flex;
-  font-size:small;
+  font-size: small;
+  font-weight: 600;
   flex-direction: column;
   justify-content: center;
-  background-color:white;
   color: black;
-  width: 70px;
-  height: 50px;
- 
+  margin-bottom: 16px;
 }
+.noName {
+  color: white;
+}
+
+.nameHolderWinner {
+  display: flex;
+  font-size: small;
+  font-weight: 600;
+  flex-direction: column;
+  justify-content: center;
+  background-color: mediumseagreen;
+  color: white;
+  margin-bottom: 16px;
+}
+
 .squareNumber {
   display: flex;
   text-align: left;
-  font-size:small;
+  font-size: small;
   align-items: center;
   justify-content: flex-start;
-  color: grey;
-  min-height: 10px;
-  
+  color: black;
+  padding-top: 2px;
+  padding-left: 2px;
 }
 
-.squareName {
+.squareNumberPaid {
+  display: flex;
+  text-align: left;
+  font-size: small;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+.squareNumberWinner {
+  color: mediumseagreen;
+}
+.squareFirstName {
   display: flex;
   text-align: center;
-  font-size:small;
+  font-size: small;
   align-items: center;
   justify-content: center;
-  color: grey;
-  margin-bottom: 10px;
+}
+
+.squareSecondName {
+  display: flex;
+  text-align: center;
+  font-size: small;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .squareFirstName,
+  .squareSecondName {
+    font-size: xx-small;
+  }
+  .nameHolder {
+    margin-bottom: 10px;
+  }
+  .nameHolderWinner {
+    margin-bottom: 10px;
+  }
+  .squareFirstName {
+    margin-bottom: 5px;
+  }
+
+  .squareNumber,
+  .squareNumberPaid {
+    font-size: xx-small;
+    padding-top: 2px;
+    padding-left: 2px;
+  }
 }

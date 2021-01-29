@@ -1,14 +1,13 @@
 .MainPage {
   text-align: center;
-  background-color: grey;
+  background-color: #282c34;
   color: black;
   display: flex;
   flex-direction: column;
-
 }
+
 .MainBoardHolder {
   text-align: center;
-  color: black;
   display: flex;
   flex-direction: column;
 }
@@ -17,50 +16,59 @@
   color: black;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .MainRow {
- display: flex;
- flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .mainTitle {
-  font-size:xx-large;
+  font-size: xx-large;
+  font-weight: 500;
   color: white;
   padding-top: 20px;
-  padding-bottom: 20px;
-
+  padding-bottom: 5px;
 }
+
+.subTitle {
+  font-size: large;
+  font-weight: 400;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
 .teamATop {
-  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  line-height: x-large;
   color: white;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: black;
 }
 .teamA {
-    font-size: x-large;
-    color: red;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: black;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background-color: black;
 }
 
-.teamBLeft{
+.teamBHolder {
   display: flex;
-  font-size: x-large;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: black;
   flex-direction: column;
-  justify-content: center;
-  text-orientation: upright;
-  writing-mode: vertical-rl;
+  justify-content: space-around;
 }
-.teamB {
-  display: flex;
-  font-size: x-large;
+
+.teamBLeft {
+  font-size: large;
   color: red;
   padding-left: 20px;
   padding-right: 20px;
@@ -69,5 +77,99 @@
   justify-content: center;
   text-orientation: upright;
   writing-mode: vertical-rl;
+  flex-grow: 1;
+}
+.teamB {
+  font-size: large;
+  color: red;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: black;
+  flex-direction: column;
+  justify-content: center;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  flex-grow: 1;
 }
 
+.instructions {
+  text-align: left;
+  font-size: medium;
+  font-weight: 100;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.instructions2 {
+  text-align: center;
+  font-size: medium;
+  font-weight: 100;
+  color: white;
+  padding: 20px;
+  line-height: 1.5rem;
+}
+.instructions3 {
+  text-align: left;
+  font-size: small;
+  font-weight: 100;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  line-height: 1.5rem;
+  margin-bottom: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+a {
+  color: rgb(64, 178, 248);
+  font-size: large;
+  text-decoration: none;
+}
+.tbLogo {
+  height: 50px;
+  object-fit: cover;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.kcLogo {
+  height: 50px;
+  object-fit: cover;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.tbLogoMobile {
+  display: block;
+  width: 40px;
+}
+.kcLogoMobile {
+  width: 40px;
+}
+.tbLogoHolder {
+  display: none;
+}
+.kcLogoHolder {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .teamB,
+  .teamBLeft,
+  .teamA,
+  .teamATop {
+    display: none;
+  }
+  .tbLogoHolder {
+    display: block;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .kcLogoHolder {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
