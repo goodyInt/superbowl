@@ -34,11 +34,6 @@ squareWidth = squareWidth.toString() + "px";
 const maxWidth = squareWidth * 11;
 
 const Board = () => {
-  //console.log("boardData", boardData);
-  console.log("boardData.BOARD.length", boardData.BOARD.length);
-  for (let i = 0; i < boardData.BOARD.length; i++) {
-    console.log(boardData.BOARD[i]);
-  }
   const getTopNumbers = () => {
     let topNum = [];
     topNum.push(
@@ -46,8 +41,10 @@ const Board = () => {
         background="lightGrey"
         squareHeight={halfWidth}
         squareWidth={halfWidth}
+        teamScore={true}
         squareSecondName=""
         key={ranKEy()}
+        teamScore={true}
       />
     );
     for (let i = 0; i < 10; i++) {
@@ -60,6 +57,7 @@ const Board = () => {
           squareSecondName="?"
           squareNumber=""
           background="lightGrey"
+          teamScore={true}
         />
       );
     }
@@ -70,8 +68,6 @@ const Board = () => {
     );
   };
   const getNewRow = (arrayStart) => {
-    console.log("arrayStart", arrayStart);
-
     let row = [];
     row.push(
       <Square
@@ -81,6 +77,7 @@ const Board = () => {
         key={ranKEy()}
         squareNumber=""
         squareSecondName="?"
+        teamScore={true}
       />
     );
     for (let i = arrayStart; i < arrayStart + 10; i++) {
@@ -172,7 +169,7 @@ const Board = () => {
         <div className="instructions3">
           <br />
           <br />
-          Updated: Fri Janurary 29, 2021 3:00pm
+          {boardData.updated}
         </div>
       </>
     );

@@ -16,10 +16,10 @@ const Square = (props) => {
     squareWidth,
     squareHeight,
     background,
+    teamScore,
   } = props;
 
   let squareBackground = background;
-  console.log("background", background);
 
   if (!squareBackground) {
     if (winner === true) {
@@ -34,8 +34,41 @@ const Square = (props) => {
     thisSquareHeight = squareWidth;
   }
 
-  console.log("squareBackground", squareBackground);
-  //bg={winner === true ? "mediumseagreen" : "white"}
+  console.log(teamScore);
+
+  const FirstName = styled.div`
+    display: flex;
+    text-align: center;
+    font-size: ${(props) => props.fs_small};
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      font-size: ${(props) => props.fs_tablet};
+    }
+    @media screen and (min-width: 900px) {
+      font-size: small;
+    }
+  `;
+
+  const SecondName = styled.div`
+    display: flex;
+    text-align: center;
+    font-size: ${(props) => props.fs_small};
+    align-items: center;
+    justify-content: center;
+    color: ${(props) => props.clr};
+    margin-top: ${(props) => props.mt_small};
+
+    @media screen and (min-width: 768px) {
+      margin-top: ${(props) => props.mt};
+      font-size: ${(props) => props.fs_tablet};
+    }
+    @media screen and (min-width: 900px) {
+      margin-top: ${(props) => props.mt};
+      font-size: small;
+    }
+  `;
 
   const BoardSquare = styled.div`
     display: flex;
@@ -70,8 +103,28 @@ const Square = (props) => {
           squareFirstName === "." ? "noName" : ""
         }`}
       >
-        <div className="squareFirstName">{squareFirstName}</div>
-        <div className="squareSecondName">{squareSecondName}</div>
+        <FirstName
+          fs_small={teamScore ? "xx-small" : "6px"}
+          fs_tablet={teamScore ? "x-small" : "10px"}
+        >
+          {squareFirstName}
+        </FirstName>
+        <SecondName
+          mt={teamScore ? "15px" : "0px"}
+          mt_small={teamScore ? "6px" : "4px"}
+          fs={teamScore ? "medium" : "small"}
+          fs_small={teamScore ? "xx-small" : "6px"}
+          fs_tablet={teamScore ? "x-small" : "10px"}
+          clr={
+            teamScore
+              ? "rgb(60, 60, 60)"
+              : squareFirstName === "."
+              ? "white"
+              : "rgb(61, 27, 233)"
+          }
+        >
+          {squareSecondName}
+        </SecondName>
       </div>
     </BoardSquare>
   );

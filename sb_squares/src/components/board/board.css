@@ -173,3 +173,21 @@ a {
     margin-bottom: 20px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .teamB,
+  .teamBLeft,
+  .teamA,
+  .teamATop {
+    display: none;
+  }
+  .tbLogoHolder {
+    display: block;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .kcLogoHolder {
+    display: block;
+    margin-bottom: 20px;
+  }
+}

@@ -4,8 +4,8 @@
   font-weight: 600;
   flex-direction: column;
   justify-content: center;
-  color: black;
-  margin-bottom: 16px;
+  color: rgb(61, 27, 233);
+  margin-bottom: 8px;
 }
 .noName {
   color: white;
@@ -19,13 +19,13 @@
   justify-content: center;
   background-color: mediumseagreen;
   color: white;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .squareNumber {
   display: flex;
   text-align: left;
-  font-size: small;
+  font-size: 6px;
   align-items: center;
   justify-content: flex-start;
   color: black;
@@ -36,7 +36,7 @@
 .squareNumberPaid {
   display: flex;
   text-align: left;
-  font-size: small;
+  font-size: 6px;
   align-items: center;
   justify-content: flex-start;
   color: white;
@@ -46,41 +46,34 @@
 .squareNumberWinner {
   color: mediumseagreen;
 }
-.squareFirstName {
-  display: flex;
-  text-align: center;
-  font-size: small;
-  align-items: center;
-  justify-content: center;
-}
 
-.squareSecondName {
-  display: flex;
-  text-align: center;
-  font-size: small;
-  align-items: center;
-  justify-content: center;
-}
-
-@media only screen and (max-width: 600px) {
-  .squareFirstName,
-  .squareSecondName {
-    font-size: xx-small;
-  }
+@media only screen and (min-width: 768px) {
   .nameHolder {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
   }
   .nameHolderWinner {
-    margin-bottom: 10px;
-  }
-  .squareFirstName {
-    margin-bottom: 5px;
+    margin-bottom: 16px;
   }
 
   .squareNumber,
   .squareNumberPaid {
-    font-size: xx-small;
+    font-size: 10px;
     padding-top: 2px;
+    padding-left: 2px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .nameHolder {
+    margin-bottom: 16px;
+  }
+  .nameHolderWinner {
+    margin-bottom: 16px;
+  }
+
+  .squareNumber,
+  .squareNumberPaid {
+    font-size: small;
+    padding-top: 0px;
     padding-left: 2px;
   }
 }
