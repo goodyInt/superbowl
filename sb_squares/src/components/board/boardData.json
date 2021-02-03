@@ -1,5 +1,5 @@
 {
-  "updated": "Updated: Sunday Jan 31, 2021 12:49pm",
+  "updated": "Updated: Wens Feb 3, 2021 10:20am",
   "BOARD": [
     {
       "squareNumber": "1",
@@ -143,9 +143,9 @@
     },
     {
       "squareNumber": "21",
-      "firstName": ".",
-      "secondName": ".",
-      "paid": false,
+      "firstName": "John",
+      "secondName": "Murchie",
+      "paid": true,
       "winner": false
     },
     {
@@ -409,9 +409,9 @@
     },
     {
       "squareNumber": "59",
-      "firstName": ".",
-      "secondName": ".",
-      "paid": false,
+      "firstName": "Pete",
+      "secondName": "Bat",
+      "paid": true,
       "winner": false
     },
     {
@@ -430,9 +430,9 @@
     },
     {
       "squareNumber": "62",
-      "firstName": ".",
-      "secondName": ".",
-      "paid": false,
+      "firstName": "Pete",
+      "secondName": "Bat",
+      "paid": true,
       "winner": false
     },
     {
@@ -577,16 +577,16 @@
     },
     {
       "squareNumber": "83",
-      "firstName": ".",
-      "secondName": ".",
-      "paid": false,
+      "firstName": "John",
+      "secondName": "Savage",
+      "paid": true,
       "winner": false
     },
     {
       "squareNumber": "84",
-      "firstName": ".",
-      "secondName": ".",
-      "paid": false,
+      "firstName": "Pete",
+      "secondName": "Bat",
+      "paid": true,
       "winner": false
     },
     {
@@ -675,9 +675,9 @@
     },
     {
       "squareNumber": "97",
-      "firstName": ".",
-      "secondName": ".",
-      "paid": false,
+      "firstName": "Pete",
+      "secondName": "Bat",
+      "paid": true,
       "winner": false
     },
     {
