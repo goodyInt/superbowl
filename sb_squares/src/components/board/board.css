@@ -39,6 +39,20 @@
   padding-top: 5px;
   padding-bottom: 20px;
 }
+.subTitleSoldOut {
+  font-size: x-large;
+  font-weight: 400;
+  color: #4cbb17;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.subTitleSmall {
+  font-size: medium;
+  font-weight: 400;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
 
 .teamATop {
   display: flex;

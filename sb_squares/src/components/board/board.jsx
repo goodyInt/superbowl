@@ -181,6 +181,10 @@ const Board = () => {
         <MainPageHolder maxWidth={maxWidth}>
           <div className="mainTitle">Super Bowl LV</div>
           <div className="subTitle">(Madison/Paupers Covid Bowl)</div>
+          <div className="subTitleSoldOut">Sold Out!</div>
+          <div className="subTitleSmall">
+            Thanks everyone! Numbers will be drawn on video before the game.
+          </div>
           <div className="teamATop">
             <img className={"kcLogo"} alt="kansas city chiefs" src={kcLogo} />
           </div>
