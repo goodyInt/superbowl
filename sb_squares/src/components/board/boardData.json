@@ -1,5 +1,5 @@
 {
-  "updated": "Updated: Wens Feb 3, 2021 10:20am",
+  "updated": "Updated: Thurs Feb 4, 2021 10:00pm",
   "BOARD": [
     {
       "squareNumber": "1",
@@ -24,9 +24,9 @@
     },
     {
       "squareNumber": "4",
-      "firstName": ".",
-      "secondName": ".",
-      "paid": false,
+      "firstName": "Bullet",
+      "secondName": "Proof",
+      "paid": true,
       "winner": false
     },
     {
@@ -332,9 +332,9 @@
     },
     {
       "squareNumber": "48",
-      "firstName": ".",
-      "secondName": ".",
-      "paid": false,
+      "firstName": "Chris",
+      "secondName": "Gilbo",
+      "paid": true,
       "winner": false
     },
     {
@@ -360,9 +360,9 @@
     },
     {
       "squareNumber": "52",
-      "firstName": ".",
-      "secondName": ".",
-      "paid": false,
+      "firstName": "CORA",
+      "secondName": "",
+      "paid": true,
       "winner": false
     },
     {
@@ -416,9 +416,9 @@
     },
     {
       "squareNumber": "60",
-      "firstName": ".",
-      "secondName": ".",
-      "paid": false,
+      "firstName": "Bullet",
+      "secondName": "Proof",
+      "paid": true,
       "winner": false
     },
     {
@@ -563,9 +563,9 @@
     },
     {
       "squareNumber": "81",
-      "firstName": ".",
-      "secondName": ".",
-      "paid": false,
+      "firstName": "Bullet",
+      "secondName": "Proof",
+      "paid": true,
       "winner": false
     },
     {
@@ -661,9 +661,9 @@
     },
     {
       "squareNumber": "95",
-      "firstName": ".",
-      "secondName": ".",
-      "paid": false,
+      "firstName": "CORA",
+      "secondName": "",
+      "paid": true,
       "winner": false
     },
     {
@@ -689,9 +689,9 @@
     },
     {
       "squareNumber": "99",
-      "firstName": ".",
-      "secondName": ".",
-      "paid": false,
+      "firstName": "Bullet",
+      "secondName": "Proof",
+      "paid": true,
       "winner": false
     },
     {
