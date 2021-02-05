@@ -1,5 +1,5 @@
 {
-  "updated": "Updated: Thurs Feb 4, 2021 10:00pm",
+  "updated": "Updated: Friday Feb 5, 2021 11:15am - SOLD OUT!",
   "BOARD": [
     {
       "squareNumber": "1",
@@ -668,9 +668,9 @@
     },
     {
       "squareNumber": "96",
-      "firstName": ".",
-      "secondName": ".",
-      "paid": false,
+      "firstName": "Darcy",
+      "secondName": "Perrier",
+      "paid": true,
       "winner": false
     },
     {
@@ -682,9 +682,9 @@
     },
     {
       "squareNumber": "98",
-      "firstName": ".",
-      "secondName": ".",
-      "paid": false,
+      "firstName": "Darcy",
+      "secondName": "Perrier",
+      "paid": true,
       "winner": false
     },
     {
