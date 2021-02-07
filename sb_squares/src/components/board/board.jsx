@@ -1,10 +1,13 @@
 import React from "react";
+import ReactPlayer from "react-player";
 import styled from "styled-components";
 import Square from "../square/square";
 import "./board.css";
 import boardData from "./boardData";
 import tbLogo from "../../images/tampaBayLogo.png";
 import kcLogo from "../../images/kcLogo.png";
+import numberDrawKC from "../../assets/kansasCity.mp4";
+import numberDrawTB from "../../assets/tbDraw.mp4";
 
 const ranKEy = () => {
   const rKey = Math.random() * 100;
@@ -22,6 +25,8 @@ const MainPageHolder = styled.div`
   max-width: ${(props) => props.maxWidth};
   border: #282c34 2px solid;
 `;
+
+let TBArrayCounter = 0;
 
 const windowWidth = window.innerWidth - 20;
 let squareWidth = Math.floor(windowWidth / 11);
@@ -44,7 +49,6 @@ const Board = () => {
         teamScore={true}
         squareSecondName=""
         key={ranKEy()}
-        teamScore={true}
       />
     );
     for (let i = 0; i < 10; i++) {
@@ -54,7 +58,7 @@ const Board = () => {
           squareWidth={squareWidth}
           key={ranKEy()}
           squareFirstName=""
-          squareSecondName="?"
+          squareSecondName={boardData.kcNums[i]}
           squareNumber=""
           background="lightGrey"
           teamScore={true}
@@ -69,6 +73,8 @@ const Board = () => {
   };
   const getNewRow = (arrayStart) => {
     let row = [];
+    TBArrayCounter = 5;
+    //++;
     row.push(
       <Square
         background="lightGrey"
@@ -76,10 +82,16 @@ const Board = () => {
         squareWidth={halfWidth}
         key={ranKEy()}
         squareNumber=""
-        squareSecondName="?"
+        squareSecondName={boardData.tbNums[arrayStart / 10]}
         teamScore={true}
       />
     );
+    console.log(
+      "boardData.tbNums[TBArrayCounter]",
+      boardData.tbNums[TBArrayCounter]
+    );
+    console.log("arrayStart/10", arrayStart / 10);
+
     for (let i = arrayStart; i < arrayStart + 10; i++) {
       row.push(
         <Square
@@ -130,29 +142,17 @@ const Board = () => {
         <div className="instructions">
           <h3>Hi Everyone,</h3>
           <div>
-            We can't go to the pub but we can still have a Super Bowl pool.
+            My son John drew the numbers this morning. Check out the videos
+            below. Good Luck!
           </div>
-          <h2>Squares are $10.</h2>
-          Please choose open squares and email the square numbers and name to be
-          listed to:
+          <br />
+          Email me with questions:
           <a href="mailto:gavinpower@gmail.com?subject=Squares for the Covid Bowl">
             {" "}
             gavinpower@gmail.com
           </a>
           <br />
           <br />
-          You can also connect with me on facebook:
-          <a href="https://www.facebook.com/gavinpower"> Gavin Power</a>
-          <br />
-          <br />
-          E-transfer your payment to{" "}
-          <a href="mailto:gavinpower@gmail.com?subject=Payment for Squares for the Covid Bowl">
-            {" "}
-            gavinpower@gmail.com
-          </a>
-          <br />
-          <br />
-          Your name will appear in your square once payment is received.
         </div>
         <div className="instructions2">
           <h2> Payouts</h2>
@@ -162,8 +162,26 @@ const Board = () => {
           <br /> Final Score $400: ???
           <br />
           <br />
-          Winnings will be e-transfered. Board is open to everyone. Let's fill
-          it. Good luck!
+          Winnings will be e-transfered. Good luck!
+        </div>
+
+        <div className="videoHolder">
+          <div className="video">
+            <ReactPlayer
+              width="200px"
+              height="200px"
+              url={numberDrawKC}
+              controls={true}
+            />
+          </div>
+          <div className="video">
+            <ReactPlayer
+              width="200px"
+              height="200px"
+              url={numberDrawTB}
+              controls={true}
+            />
+          </div>
         </div>
 
         <div className="instructions3">
@@ -181,10 +199,8 @@ const Board = () => {
         <MainPageHolder maxWidth={maxWidth}>
           <div className="mainTitle">Super Bowl LV</div>
           <div className="subTitle">(Madison/Paupers Covid Bowl)</div>
-          <div className="subTitleSoldOut">Sold Out!</div>
-          <div className="subTitleSmall">
-            Thanks everyone! Numbers will be drawn on video before the game.
-          </div>
+          <div className="subTitleSoldOut">Good Luck!</div>
+
           <div className="teamATop">
             <img className={"kcLogo"} alt="kansas city chiefs" src={kcLogo} />
           </div>

@@ -1,10 +1,6 @@
 import React from "react";
 import "./square.css";
 import styled from "styled-components";
-//import pageStyles from "./aboutPage.module.scss";
-
-//import InfoCard from "../../components/cards/info/infoCard";
-//import aboutData from "./aboutData";
 
 const Square = (props) => {
   const {
@@ -33,8 +29,6 @@ const Square = (props) => {
   if (!thisSquareHeight) {
     thisSquareHeight = squareWidth;
   }
-
-  console.log(teamScore);
 
   const FirstName = styled.div`
     display: flex;
@@ -117,7 +111,7 @@ const Square = (props) => {
           fs_tablet={teamScore ? "x-small" : "10px"}
           clr={
             teamScore
-              ? "rgb(60, 60, 60)"
+              ? "rgb(30, 30, 30)"
               : squareFirstName === "."
               ? "white"
               : "rgb(61, 27, 233)"

@@ -1,5 +1,8 @@
 {
-  "updated": "Updated: Friday Feb 5, 2021 4:00pm - SOLD OUT!",
+  "updated": "Updated: Sunday Feb 7, 2021 12:00pm - Game Day!",
+  "kcNums": [8, 5, 7, 3, 1, 9, 0, 2, 4, 6],
+
+  "tbNums": [0, 7, 1, 2, 5, 3, 4, 8, 6, 9],
   "BOARD": [
     {
       "squareNumber": "1",
