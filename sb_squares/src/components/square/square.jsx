@@ -112,7 +112,7 @@ const Square = (props) => {
           clr={
             teamScore
               ? "rgb(30, 30, 30)"
-              : squareFirstName === "."
+              : squareFirstName === "." || winner === true
               ? "white"
               : "rgb(61, 27, 233)"
           }

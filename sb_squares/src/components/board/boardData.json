@@ -100,7 +100,7 @@
       "firstName": "BIG",
       "secondName": "AL",
       "paid": true,
-      "winner": false
+      "winner": true
     },
     {
       "squareNumber": "15",
@@ -181,10 +181,10 @@
     },
     {
       "squareNumber": "26",
-      "firstName": "Hannah",
-      "secondName": "Kitzan",
+      "firstName": "X2 Hannah",
+      "secondName": "Kitzan X2",
       "paid": true,
-      "winner": false
+      "winner": true
     },
     {
       "squareNumber": "27",
@@ -212,7 +212,7 @@
       "firstName": "Tucker",
       "secondName": "Gilroy",
       "paid": true,
-      "winner": false
+      "winner": true
     },
     {
       "squareNumber": "31",

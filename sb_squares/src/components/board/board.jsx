@@ -156,10 +156,10 @@ const Board = () => {
         </div>
         <div className="instructions2">
           <h2> Payouts</h2>
-          1st Quarter $150: ???
-          <br /> 2nd Quarter $300: ???
-          <br /> 3rd Quarter $150: ???
-          <br /> Final Score $400: ???
+          1st Quarter $150: BIG AL!
+          <br /> 2nd Quarter $300: Tucker Gilroy!
+          <br /> 3rd Quarter $150: Hannah Kitzan!
+          <br /> Final Score $400: Hannah Kitzan!
           <br />
           <br />
           Winnings will be e-transfered. Good luck!
